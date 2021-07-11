@@ -16,13 +16,19 @@
     "illuminate/support": "5.2.x|5.3.x|5.4.x|5.5.x|5.6.x|5.7.x|5.8.x|^6.0|^7.0|^8.0|^9.0",
     "illuminate/contracts": "5.2.x|5.3.x|5.4.x|5.5.x|5.6.x|5.7.x|5.8.x|^6.0|^7.0|^8.0|^9.0",
     "graham-campbell/manager": "^2.4 || ^3.0 || ^4.0",
-    "odenktools/php-bca": "2.*"
+    "odenktools/php-bca": "@dev"
   },
   "require-dev": {
     "graham-campbell/testbench": "^3.2 || ^4.0 || ^5.0",
     "mockery/mockery": "^0.9.5 || ~1.0",
     "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0 || ^7.0"
   },
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/back2arie/php-bca"
+    }
+  ],
   "autoload": {
     "psr-4": {
       "Odenktools\\Bca\\": "src/"
